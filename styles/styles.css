@@ -1,0 +1,149 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #111;
+  background-color: #fafafa;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  width: 1200px;
+  padding: 0 32px;
+}
+-----/* Header */-----
+
+.header-container {
+}
+
+.header-nav {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  color: #111;
+}
+
+.header-logo-accent {
+  font-style: normal;
+}
+
+.header-logo-icon {
+}
+
+.header-nav-list {
+  display: flex;
+  margin-left: auto;
+  gap: 24px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.header-nav-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.header-nav-link {
+  color: #111;
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header-nav-link:focus,
+.header-nav-link:hover {
+  color: #fd9222;
+}
+
+.header-social-list {
+  display: flex;
+  gap: 14px;
+  margin-left: 90px;
+}
+
+.header-social-item {
+}
+
+.header-social-link {
+}
+
+.header-social-icon {
+  fill: transparent;
+  stroke: #111;
+  transition: stroke 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header-social-icon:hover {
+  stroke: #fd9222;
+}
+.header-social-link:focus + .header-social-icon {
+  stroke: #fd9222;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+  .header-social-list {
+    margin-left: 48px;
+  }
+  .header-nav-list {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header-logo-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 375px;
+    padding: 0 20px;
+  }
+  .header-nav-list {
+    display: none;
+  }
+  .header-social-list {
+    display: none;
+  }
+
+  .mob-menu-icon {
+    fill: transparent;
+    stroke: #111;
+    margin-left: auto;
+  }
+  .header-logo {
+    padding: 23px 0;
+  }
+}
