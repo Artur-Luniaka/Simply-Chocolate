@@ -357,7 +357,6 @@ img {
   background-color: #1e1823;
   padding: 50px;
   display: flex;
-  margin-bottom: 120px;
   gap: 88px;
 }
 .visually-hidden {
@@ -399,4 +398,20 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 22px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .benefits-wrap {
+    padding-left: 32px;
+    padding-right: 32px;
+    flex-wrap: wrap;
+  }
+  .benefits-wrap-item {
+    flex-basis: calc((100% - 88px) / 2);
+  }
+}
+@media (max-width: 767px) {
+  .benefits-wrap {
+    padding: 20px;
+    flex-direction: column;
+  }
 }
