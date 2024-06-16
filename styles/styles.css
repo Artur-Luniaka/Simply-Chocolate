@@ -622,3 +622,68 @@ img {
   letter-spacing: -0.02em;
   color: #111;
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .taste-section {
+    margin-bottom: 100px;
+  }
+
+  .taste-item-wrap-orange {
+    width: 336px;
+    height: 270px;
+    padding: 14px 14px 28px 28px;
+  }
+
+  .taste-item-wrap-white {
+    width: 336px;
+    height: 270px;
+    padding: 14px 14px 28px 28px;
+  }
+
+  .taste-item-wrap-black {
+    width: 336px;
+    height: 270px;
+    padding: 14px 14px 28px 28px;
+  }
+
+  .taste-img {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .taste-item-wrap-orange {
+    width: 336px;
+    height: 270px;
+    padding: 14px 14px 28px 28px;
+  }
+
+  .taste-item-wrap-white {
+    width: 336px;
+    height: 270px;
+    padding: 14px 14px 28px 28px;
+  }
+
+  .taste-item-wrap-black {
+    width: 336px;
+    height: 270px;
+    padding: 14px 14px 28px 28px;
+  }
+
+  .taste-img {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .taste-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* <----- -----> */
