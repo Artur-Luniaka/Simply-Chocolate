@@ -1154,5 +1154,55 @@
         </form>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal-window">
+        <button type="button" class="modal-close-btn">
+          <svg class="modal-close-btn-icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <p class="modal-title">
+          LEAVE A REVIEW ABOUT <span class="modal-title-accent">OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <label class="modal-label" for="user_name">Name</label>
+          <div class="modal-input-wrap">
+            <svg class="modal-input-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-user"></use>
+            </svg>
+            <input class="modal-input" type="text" id="user_name" name="user_name" />
+          </div>
+          <label class="modal-label" for="user_email_form">Email</label>
+          <div class="modal-input-wrap">
+            <svg class="modal-input-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            <input class="modal-input" type="email" id="user_email_form" name="user_email_form" />
+          </div>
+          <label class="modal-label" for="user_phone">Phone number</label>
+          <div class="modal-input-wrap">
+            <svg class="modal-input-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input class="modal-input" type="tel" id="user_phone" name="user_phone" />
+          </div>
+          <label class="modal-label" for="user_comment">Comment</label>
+          <textarea
+            class="modal-textarea"
+            name="user_comment"
+            id="user_comment"
+            placeholder="Enter text"
+          ></textarea>
+          <div class="modal-checkbox-wrap">
+            <input type="checkbox" id="privacy-checkbox" name="privacy-checkbox" />
+            <label class="modal-checkbox-text" for="privacy-checkbox"
+              >I accept the terms and conditions of the
+              <a class="modal-checkbox-text-link" href="">Privacy Policy</a></label
+            >
+          </div>
+        </form>
+        <button class="modal-submit-btn" type="submit">Send</button>
+      </div>
+    </div>
   </body>
 </html>
