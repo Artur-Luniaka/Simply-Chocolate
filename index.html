@@ -1167,24 +1167,24 @@
         <form class="modal-form">
           <label class="modal-label" for="user_name">Name</label>
           <div class="modal-input-wrap">
+            <input class="modal-input" type="text" id="user_name" name="user_name" />
             <svg class="modal-input-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-user"></use>
             </svg>
-            <input class="modal-input" type="text" id="user_name" name="user_name" />
           </div>
           <label class="modal-label" for="user_email_form">Email</label>
           <div class="modal-input-wrap">
+            <input class="modal-input" type="email" id="user_email_form" name="user_email_form" />
             <svg class="modal-input-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
-            <input class="modal-input" type="email" id="user_email_form" name="user_email_form" />
           </div>
           <label class="modal-label" for="user_phone">Phone number</label>
           <div class="modal-input-wrap">
+            <input class="modal-input" type="tel" id="user_phone" name="user_phone" />
             <svg class="modal-input-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-            <input class="modal-input" type="tel" id="user_phone" name="user_phone" />
           </div>
           <label class="modal-label" for="user_comment">Comment</label>
           <textarea
@@ -1194,8 +1194,17 @@
             placeholder="Enter text"
           ></textarea>
           <div class="modal-checkbox-wrap">
-            <input type="checkbox" id="privacy-checkbox" name="privacy-checkbox" />
-            <label class="modal-checkbox-text" for="privacy-checkbox"
+            <label class="modal-checkbox-text" for="privacy-checkbox">
+              <input
+                class="checkbox-input visually-hidden"
+                type="checkbox"
+                id="privacy-checkbox"
+                name="privacy-checkbox"
+              />
+              <span class="modal-custom-checkbox">
+                <svg class="modal-custom-checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-agree"></use>
+                </svg> </span
               >I accept the terms and conditions of the
               <a class="modal-checkbox-text-link" href="">Privacy Policy</a></label
             >
